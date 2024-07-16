@@ -7,8 +7,9 @@ export default function CartItem(props) {
 
   function handleChange(e) {
     e.preventDefault();
-    setCurrQ(e.target.value);
-    props.changeQuantity();
+    let newQuantity = e.target.value
+    setCurrQ(newQuantity);
+    props.changeQuantity(newQuantity);
   }
 
   return (

@@ -28,7 +28,7 @@ export default function Cart() {
               <CartItem
                 prod={item}
                 key={item.id}
-                changeQuantity={() => dispatch(updateItemCart(item.id))}
+                changeQuantity={(newQuant) => dispatch(updateItemCart({id:item.id, newQuantity:newQuant }))}
                 remove={() => dispatch(removeItemFromCart(item.id))}
               />
             ))}

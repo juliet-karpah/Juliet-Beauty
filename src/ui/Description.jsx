@@ -34,7 +34,7 @@ export default function Description(props) {
           <p className="p-4">{openDescription ? props.description:props.ingredients }</p>
       </div>
       <div className="w-full h-[36rem]">
-        <img className="h-full object-cover" src={props.src} />
+        <img className="h-full object-cover w-full" src={props.src} />
       </div>
     </section>
   );
